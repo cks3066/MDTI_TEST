@@ -1,12 +1,7 @@
 <h1>캐치업! 꿈을 찾는 MDTI 테스트</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-</p>
 
-<h2">청년이룸 프로젝트</h2>
+
+<h2>청년이룸 프로젝트</h2>
 
 스텝별 교육 프로그램 안내 및 프로그램 참여율을 높이는 서비스 제작
 
