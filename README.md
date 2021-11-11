@@ -9,7 +9,7 @@
 
 > 배포 URL
 
-catchup.shop
+www.catchup.shop
 
 <h2>청년이룸 프로젝트</h2>
 
