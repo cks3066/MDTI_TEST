@@ -1,4 +1,4 @@
-<h1 align="center">캐치업! 꿈을 찾는 MDTI 테스트</h1>
+<h1>캐치업! 꿈을 찾는 MDTI 테스트</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
