@@ -7,7 +7,9 @@
   </a>
 </p>
 
-배포 URL : catchup.shop
+> 배포 URL
+
+catchup.shop
 
 <h2>청년이룸 프로젝트</h2>
 
