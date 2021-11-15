@@ -19,21 +19,18 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  background: url("./images/background.png") repeat;
 }
 
 .App {
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: fixed;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 375px;
   min-height: 100vh;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .progress-div {
@@ -50,14 +47,20 @@ body {
 }
 
 #homeTitle {
+  margin: 4px;
+}
+#homeImg {
+  margin: 8px;
+  margin-bottom: 0px;
+}
+#homeTitle {
   font-family: "GmarketSansBold";
   font-size: 36px;
   padding-bottom: 30px;
 }
 
 #homeStartBtn {
-  margin: 24px;
-  background: #68b6e3;
+  background: #6aa99e;
   border: none;
   border-radius: 32.5px;
   width: 310px;
