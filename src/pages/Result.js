@@ -101,6 +101,10 @@ const Result = (props) => {
         height="230px"
       ></img>
 
+      <div id="resultBtnContainer">
+        <button id="resultRetry">다시하기</button>
+        <button id="resultAll">전체 유형 보기</button>
+      </div>
       <div id="resultShare">결과 공유하기</div>
       <div id="shareContainer">
         <img
@@ -148,10 +152,6 @@ const Result = (props) => {
         )}
       </div>
 
-      <div id="resultBtnContainer">
-        <button id="resultRetry">다시하기</button>
-        <button id="resultAll">전체 유형 보기</button>
-      </div>
       {/* <button id="resultRetryBtn">다시하기</button>
       <button id="resultShowAll">전체 유형 보기</button> */}
     </>

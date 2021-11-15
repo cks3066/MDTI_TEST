@@ -35,11 +35,20 @@ const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const Test = (props) => {
   const history = useHistory();
   const [step, setStep] = React.useState(0);
+  const [time, setTime] = React.useState(true);
   const questionNum = [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12];
   const question = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12];
   const wid = [185, 240, 275, 267, 229, 260, 298, 307, 276, 210, 210, 254];
   const hei = [50, 25, 50, 75, 50, 75, 50, 75, 75, 50, 50, 75];
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setTime(true);
+    }, 700);
+  }, [time]);
+
   const onClick = (num) => {
+    setTime(false);
     if (step < 11) setStep(step + 1);
     else if (step === 11) {
       history.push({
@@ -58,49 +67,53 @@ const Test = (props) => {
   return (
     <>
       {/* <Menu /> */}
-      {step < 9 ? (
-        <img
-          className="testQusetionNum"
-          src={questionNum[step]}
-          alt="img"
-          width="85px"
-          height="45px"
-        ></img>
-      ) : (
-        <img
-          className="testQusetionNum"
-          src={questionNum[step]}
-          alt="img"
-          width="105px"
-          height="45px"
-        ></img>
+      {time && (
+        <>
+          {step < 9 ? (
+            <img
+              className="testQusetionNum"
+              src={questionNum[step]}
+              alt="img"
+              width="85px"
+              height="45px"
+            ></img>
+          ) : (
+            <img
+              className="testQusetionNum"
+              src={questionNum[step]}
+              alt="img"
+              width="105px"
+              height="45px"
+            ></img>
+          )}
+          <div className="testQuestionContainer">
+            <img
+              className="testQusetion"
+              src={question[step]}
+              alt="img"
+              width={wid[step]}
+              height={hei[step]}
+            ></img>
+          </div>
+          <button
+            className="testAnswer"
+            onClick={() => {
+              onClick(0);
+            }}
+          >
+            네
+          </button>
+          <button
+            className="testAnswer"
+            onClick={() => {
+              onClick(1);
+            }}
+          >
+            아니요
+          </button>
+          <ProgressBar width={300} percent={step / 11} />
+        </>
       )}
-      <div className="testQuestionContainer">
-        <img
-          className="testQusetion"
-          src={question[step]}
-          alt="img"
-          width={wid[step]}
-          height={hei[step]}
-        ></img>
-      </div>
-      <button
-        className="testAnswer"
-        onClick={() => {
-          onClick(0);
-        }}
-      >
-        네
-      </button>
-      <button
-        className="testAnswer"
-        onClick={() => {
-          onClick(1);
-        }}
-      >
-        아니요
-      </button>
-      <ProgressBar width={300} percent={step / 11} />
     </>
   );
 };

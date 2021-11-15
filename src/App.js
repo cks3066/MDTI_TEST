@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-
 import "./style.css";
 
 import Home from "./pages/Home";
@@ -11,8 +10,8 @@ import Header from "./elements/Header";
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Route path="/" exact component={Home} />
         <Route path="/test" exact component={Test} />
         <Route path="/result" exact component={Result} />
