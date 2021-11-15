@@ -8,6 +8,9 @@ import twitter from "../images/twitter.png";
 import link from "../images/link.png";
 import { useHistory } from "react-router-dom";
 
+import dino1 from "../images/result/dino1.png";
+import title1 from "../images/result/type1.png";
+
 const findResult = (select) => {
   const maxValue = Math.max.apply(null, select);
   var result = 0;
@@ -63,27 +66,28 @@ const Result = (props) => {
 
   return (
     <>
-      <h1 id="resultTitle">진로단계 결과</h1>
-      <div id="resultSimple">{testData.infoList[result].name}</div>
+      <div id="resultTitle">더 많은 지식과 더 많은 체험이 필요한</div>
       <img
-        src="https://source.unsplash.com/random"
+        id="resultType"
+        src={title1}
         alt="img"
-        width="310px"
-        height="230px"
+        width="180px"
+        height="44px"
       ></img>
+      <img src={dino1} alt="img" width="310px" height="230px"></img>
       <div id="resultMain_Title">{testData.infoList[result].name}</div>
       <div id="resultMain">{testData.infoList[result].desc}</div>
 
       <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
-      <div class="resultPrograms">
+      <div className="resultPrograms">
         <p id="programName">프로그램 이름</p>
         <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
       </div>
-      <div class="resultPrograms">
+      <div className="resultPrograms">
         <p id="programName">프로그램 이름</p>
         <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
       </div>
-      <div class="resultPrograms">
+      <div className="resultPrograms">
         <p id="programName">프로그램 이름</p>
         <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
       </div>
@@ -100,7 +104,7 @@ const Result = (props) => {
       <div id="resultShare">결과 공유하기</div>
       <div id="shareContainer">
         <img
-          class="shareIcon"
+          className="shareIcon"
           src={kakao}
           alt="kakaotalk"
           width="65px"
@@ -109,7 +113,7 @@ const Result = (props) => {
         />
 
         <img
-          class="shareIcon"
+          className="shareIcon"
           src={facebook}
           alt="facebook"
           width="65px"
@@ -118,17 +122,17 @@ const Result = (props) => {
         ></img>
 
         <img
-          class="shareIcon"
+          className="shareIcon"
           src={twitter}
           alt="twitter"
           width="65px"
           height="65px"
           onClick={twitterShare}
         ></img>
-        <input type="hidden" id="urlInput" class="url-input" />
+        <input type="hidden" id="urlInput" className="url-input" />
 
         <img
-          class="shareIcon"
+          className="shareIcon"
           src={link}
           alt="link"
           width="65px"

@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import title from "../images/title.png";
 import mainDino from "../images/main_dino.png";
+
 const Home = (props) => {
   const history = useHistory();
   const onClick = () => {
@@ -25,17 +26,17 @@ const Home = (props) => {
 
   return (
     <>
-      <div>
+      <div className="home">
         <b>My Dream</b> Type Indicator
       </div>
-      {/* <div id="homeTitle">MDTI 테스트</div> */}
       <img
-        id="homeTite"
+        id="homeTitle"
         src={title}
         alt="img"
-        width="187x"
+        width="226x"
         height="122px"
       ></img>
+
       <img
         id="homeImg"
         src={mainDino}
@@ -46,7 +47,7 @@ const Home = (props) => {
       <button id="homeStartBtn" onClick={onClick}>
         시작하기
       </button>
-      <p id="homeCountApply">00명의 청년들이 참여했어요</p>
+      <p id="homeCountApply">MDTI 테스트란?</p>
     </>
   );
 };

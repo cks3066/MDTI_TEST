@@ -8,6 +8,11 @@
   font-style: normal;
 }
 
+@media screen and (max-height: 640px) {
+  .home {
+    margin-top: 40px;
+  }
+}
 body {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -29,34 +34,55 @@ body {
   justify-content: center;
   align-items: center;
   width: 375px;
-  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0);
+  margin-top: 100px;
 }
 
-.progress-div {
+.home {
+  margin-top: 80px;
+}
+
+.headerContainer {
   position: absolute;
-  top: 10%;
-  background-color: rgb(233, 233, 233);
-  border-radius: 0.5rem;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  left: 0px;
+  top: 0px;
+
+  /* main1 */
+
+  background: #6aa99e;
+}
+
+.menuBar {
+  width: 100%;
+  height: 52px;
+  background-color: #fffef5;
+  margin-top: -40px;
+  box-shadow: 0px 2px 4px rgba(63, 63, 63, 0.1);
+  margin-bottom: 100px;
+}
+.progress-div {
+  margin-top: 160px;
+  background-color: rgba(196, 196, 196, 0.5);
 }
 
 .progress {
-  background-color: rgb(62, 122, 235);
-  height: 10px;
+  background-color: #6aa99e;
+  height: 5px;
   border-radius: 1rem;
 }
 
+.logo {
+  margin: 15px;
+}
 #homeTitle {
-  margin: 4px;
+  margin: 8px;
 }
 #homeImg {
   margin: 8px;
   margin-bottom: 0px;
-}
-#homeTitle {
-  font-family: "GmarketSansBold";
-  font-size: 36px;
-  padding-bottom: 30px;
 }
 
 #homeStartBtn {
@@ -67,6 +93,10 @@ body {
   height: 64px;
   color: white;
   cursor: pointer;
+  margin-top: -12px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 #homeCountApply {
@@ -80,20 +110,32 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  color: #6aa99e;
 }
 
+.testQusetionNum {
+  margin-top: 40px;
+}
 #testQuestion {
   font-family: "GmarketSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 25px;
   margin: 33px;
   margin-bottom: 60px;
+
+  color: #6aa99e;
 }
 
+.testQuestionContainer {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .testAnswer {
-  background: #eeeeee;
+  background: #fffef5;
   border-radius: 32.5px;
   width: 310px;
   height: 64px;
@@ -101,32 +143,27 @@ body {
   cursor: pointer;
   margin: 8px;
   display: table;
-}
-
-.testAnswerP {
+  box-sizing: border-box;
+  border: 2px solid #6aa99e;
+  font-size: 15px;
   font-family: "Noto Sans KR";
-  font-weight: bold;
-  font-size: 14px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
+  font-weight: normal;
 }
 
-#answer:hover {
-  background-color: skyblue;
-}
-
-#answer:active {
-  background-color: blue;
+.testAnswer:active {
+  background: #6aa99e;
+  color: #fffef5;
+  border-radius: 32.5px;
+  border: 2px solid #6aa99e;
+  padding: 0;
 }
 
 #resultTitle {
-  font-family: "GmarketSansBold";
-  font-size: 36px;
-  margin-top: 70px;
-  margin-bottom: 10px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #6999b5;
+  font-weight: 400;
 }
 
 #resultSimple {
@@ -290,4 +327,8 @@ body {
   font-family: "Noto Sans KR";
   font-weight: 700;
   font-size: 14px;
+}
+
+#resultType {
+  margin-bottom: 25px;
 }

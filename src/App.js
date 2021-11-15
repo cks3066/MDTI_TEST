@@ -6,10 +6,12 @@ import "./style.css";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
 import Result from "./pages/Result";
+import Header from "./elements/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <BrowserRouter>
         <Route path="/" exact component={Home} />
         <Route path="/test" exact component={Test} />
