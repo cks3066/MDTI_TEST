@@ -44,7 +44,7 @@ const Test = (props) => {
   React.useEffect(() => {
     setTimeout(() => {
       setTime(true);
-    }, 200);
+    }, 400);
   }, [time]);
 
   const onClick = (num) => {

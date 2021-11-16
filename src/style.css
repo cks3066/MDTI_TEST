@@ -33,10 +33,10 @@ body {
   margin-top: 100px;
 }
 
-h3 {
+.resultH3 {
   font-family: "GmarketSansBold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   color: #6aa99e;
