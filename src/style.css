@@ -304,7 +304,7 @@ h3 {
 }
 
 #resultBtnContainer {
-  margin-top: 233px;
+  margin-top: 60px;
   margin-bottom: 16px;
 
   height: 80px;
@@ -341,13 +341,28 @@ h3 {
 }
 
 .h3Container {
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
+
+#showResultBtn {
+  background: #6aa99e;
+  border: none;
+  border-radius: 32.5px;
+  width: 310px;
+  height: 64px;
+  color: white;
+  cursor: pointer;
+  margin-top: 65px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 #test {
-  animation: fadein 1.5s;
-  -moz-animation: fadein 1.5s; /* Firefox */
-  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-  -o-animation: fadein 1.5s; /* Opera */
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 
 @keyframes fadein {

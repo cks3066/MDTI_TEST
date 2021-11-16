@@ -1,6 +1,5 @@
 import React from "react";
 import Toast from "../elements/Toast";
-import testData from "../testData.json";
 import { kakaoShare, twitterShare, facebookShare } from "../elements/share";
 import facebook from "../images/facebook.png";
 import kakao from "../images/kakao.png";
@@ -10,19 +9,6 @@ import { useHistory } from "react-router-dom";
 
 import dino1 from "../images/result/dino1.png";
 import title1 from "../images/result/type1.png";
-
-const findResult = (select) => {
-  const maxValue = Math.max.apply(null, select);
-  var result = 0;
-
-  select.forEach((item, idx) => {
-    if (item === maxValue) {
-      result = idx;
-    }
-  });
-
-  return result;
-};
 
 const copyToClipboard = (val) => {
   const t = document.createElement("textarea");
@@ -39,14 +25,7 @@ const copy = (func) => {
 };
 
 const Result = (props) => {
-  var select = null;
   const history = useHistory();
-  if (props.location.state === undefined) {
-    history.push("/");
-  } else {
-    select = props.location.state.select;
-  }
-  const result = findResult(select);
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클리보드에 URL이 복사되었습니다.";
 
@@ -75,8 +54,21 @@ const Result = (props) => {
         height="44px"
       ></img>
       <img src={dino1} alt="img" width="310px" height="230px"></img>
-      <div id="resultMain_Title">{testData.infoList[result].name}</div>
-      <div id="resultMain">{testData.infoList[result].desc}</div>
+      <div id="resultMain_Title">
+        씨앗을 심고 새싹이 될 때까지 정성을 들이는 단계
+      </div>
+      <div id="resultMain">
+        <p>
+          더 나은 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고
+          저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고
+          저쩌고저쩌고 어쩌고 저쩌고 어쩌고 저쩌고저쩌고 어쩌고 저쩌고 어쩌고
+        </p>
+        <p>
+          내가 어떤 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고
+          어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고
+          저쩌고저쩌고 어쩌고 저쩌고 어쩌고 저쩌고저쩌고 어쩌고 저쩌고 어쩌고
+        </p>
+      </div>
 
       <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
       <div className="resultPrograms">
