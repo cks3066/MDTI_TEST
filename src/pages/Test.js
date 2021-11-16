@@ -42,10 +42,11 @@ const Test = (props) => {
   const hei = [50, 25, 50, 75, 50, 75, 50, 75, 75, 50, 50, 75];
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setTime(true);
-    }, 100);
-  }, []);
+    if (!time)
+      setTimeout(() => {
+        setTime(true);
+      }, 100);
+  }, [time]);
 
   const onClick = (num) => {
     setTime(false);
