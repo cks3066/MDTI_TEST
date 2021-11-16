@@ -69,7 +69,7 @@ const kakaoShare = () => {
 const twitterShare = () => {
   var sendText = "캐치업! 지금 바로 MDTI 테스트 하러가기";
   var sendUrl =
-    "https://cks3066.github.io/YoutheRoom/                                             ";
+    "https://catchup.shop/                                            ";
   var sendHashTag = "청년이룸,캐치업,MyDream,MDTI";
   window.open(
     "https://twitter.com/intent/tweet?text=" +
@@ -82,7 +82,7 @@ const twitterShare = () => {
 };
 
 const facebookShare = () => {
-  var sendUrl = "https://cks3066.github.io/YoutheRoom/";
+  var sendUrl = "https://catchup.shop";
   window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
 };
 

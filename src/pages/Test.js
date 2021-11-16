@@ -35,7 +35,7 @@ const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const Test = (props) => {
   const history = useHistory();
   const [step, setStep] = React.useState(0);
-  const [time, setTime] = React.useState(true);
+  const [time, setTime] = React.useState(false);
   const questionNum = [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12];
   const question = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12];
   const wid = [185, 240, 275, 267, 229, 260, 298, 307, 276, 210, 210, 254];
@@ -44,8 +44,8 @@ const Test = (props) => {
   React.useEffect(() => {
     setTimeout(() => {
       setTime(true);
-    }, 400);
-  }, [time]);
+    }, 100);
+  }, []);
 
   const onClick = (num) => {
     setTime(false);
