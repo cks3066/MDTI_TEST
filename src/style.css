@@ -8,11 +8,6 @@
   font-style: normal;
 }
 
-@media screen and (max-height: 640px) {
-  .home {
-    margin-top: 40px;
-  }
-}
 body {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -38,8 +33,17 @@ body {
   margin-top: 100px;
 }
 
+h3 {
+  font-family: "GmarketSansBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #6aa99e;
+  margin: 2px;
+}
 .home {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .headerContainer {
@@ -64,7 +68,7 @@ body {
   margin-bottom: 100px;
 }
 .progress-div {
-  margin-top: 160px;
+  margin-top: 50px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 
@@ -102,6 +106,7 @@ body {
 
 #homeCountApply {
   margin: 0px;
+  cursor: pointer;
 }
 
 #testQuestionNum {
@@ -115,7 +120,7 @@ body {
 }
 
 .testQusetionNum {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 #testQuestion {
   font-family: "GmarketSansBold";
@@ -333,4 +338,50 @@ body {
 
 #resultType {
   margin-bottom: 25px;
+}
+
+.h3Container {
+  margin-top: 100px;
+}
+#test {
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

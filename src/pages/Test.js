@@ -44,7 +44,7 @@ const Test = (props) => {
   React.useEffect(() => {
     setTimeout(() => {
       setTime(true);
-    }, 700);
+    }, 200);
   }, [time]);
 
   const onClick = (num) => {
@@ -52,7 +52,7 @@ const Test = (props) => {
     if (step < 11) setStep(step + 1);
     else if (step === 11) {
       history.push({
-        pathname: "/result",
+        pathname: "/wait",
         state: { select: select },
       });
     }
@@ -67,8 +67,9 @@ const Test = (props) => {
   return (
     <>
       {/* <Menu /> */}
+      <ProgressBar width={300} percent={step / 11} />
       {time && (
-        <>
+        <div id="test">
           {step < 9 ? (
             <img
               className="testQusetionNum"
@@ -111,8 +112,7 @@ const Test = (props) => {
           >
             아니요
           </button>
-          <ProgressBar width={300} percent={step / 11} />
-        </>
+        </div>
       )}
     </>
   );

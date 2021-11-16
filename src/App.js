@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Test from "./pages/Test";
 import Result from "./pages/Result";
 import Header from "./elements/Header";
+import BeforeResult from "./pages/BeforeResult";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Route path="/" exact component={Home} />
         <Route path="/test" exact component={Test} />
+        <Route path="/wait" exact component={BeforeResult} />
         <Route path="/result" exact component={Result} />
       </BrowserRouter>
     </div>
