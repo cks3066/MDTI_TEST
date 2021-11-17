@@ -393,10 +393,7 @@ body {
 }
 
 #test {
-  animation: fadein 1s ease-in-out;
-  -moz-animation: fadein 1s ease-in-out; /* Firefox */
-  -webkit-animation: fadein 1s ease-in-out; /* Safari and Chrome */
-  -o-animation: fadein 1s ease-in-out; /* Opera */
+  animation: fadein 1.5s ease-in-out;
 }
 
 @keyframes fadein {
@@ -409,30 +406,9 @@ body {
     transform: none;
   }
 }
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
+
 @-webkit-keyframes fadein {
   /* Safari and Chrome */
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
   from {
     opacity: 0;
     transform: translateY(20px);
