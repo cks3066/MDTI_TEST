@@ -1,34 +1,41 @@
 import React from "react";
 import { Loading3QuartersOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 const BeforeResult = (props) => {
   const history = useHistory();
+  const { select } = props.location.state;
   const [isLoading, setIsLoading] = React.useState(true);
+  const [showData, setShowData] = React.useState();
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  });
-  //   React.useEffect(() => {
-  //     if (props.pos.posX !== undefined && props.pos.posY !== undefined) {
-  //       const dustURL = `http://localhost:8080/app/microdust?tmX=${props.pos.posX}&tmY=${props.pos.posY}`;
-
-  //       axios
-  //         .get(dustURL)
-  //         .then((res) => {
-  //           setDustData(res.data.result);
-  //           setIsLoading(false);
-  //         })
-  //         .catch((error) => {
-  //           console.error(error);
-  //         });
-  //     }
-  //   }, [props]);
+    axios
+      .post(
+        "http://api.catchup.shop/result",
+        { result_array: select.join("_") },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
+      .then((res) => {
+        setShowData(res.data.data);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000);
+      })
+      .catch((error) => {
+        console.dir(error);
+      });
+  }, []);
 
   const onClick = () => {
-    history.push("/result");
+    history.push({
+      pathname: "/result",
+      state: { showData: showData },
+    });
   };
 
   return (

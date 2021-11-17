@@ -6,10 +6,19 @@ import kakao from "../images/kakao.png";
 import twitter from "../images/twitter.png";
 import link from "../images/link.png";
 import { useHistory } from "react-router-dom";
+import Modal from "../elements/Modal";
+import title1 from "../images/result/title1.png";
+import title2 from "../images/result/title2.png";
+import title3 from "../images/result/title3.png";
+import title4 from "../images/result/title4.png";
 
-import dino1 from "../images/result/dino1.png";
-import title1 from "../images/result/type1.png";
-
+const subTitle = [
+  "다양한 경험이 필요한",
+  "더 많은 지식과 더 많은 체험이 필요한",
+  "구체적이고 명확한 기회가 필요한",
+  "면접, 자소서 등의 준비가 필요한",
+];
+const title = [title1, title2, title3, title4];
 const copyToClipboard = (val) => {
   const t = document.createElement("textarea");
   document.body.appendChild(t);
@@ -20,15 +29,17 @@ const copyToClipboard = (val) => {
 };
 
 const copy = (func) => {
-  copyToClipboard("https://cks3066.github.io/YoutheRoom/");
+  copyToClipboard("catchup.shop/");
   func("complete");
 };
 
 const Result = (props) => {
   const history = useHistory();
+  const [isShowAll, setIsShowAll] = React.useState(false);
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클리보드에 URL이 복사되었습니다.";
-
+  const { showData } = props.location.state;
+  console.log(showData);
   const handleToast = () => {
     if (!ToastStatus) {
       setToastStatus(true);
@@ -43,59 +54,65 @@ const Result = (props) => {
     }
   }, [ToastStatus]);
 
+  const handleRetryBtn = () => {
+    history.push("/");
+  };
+
+  const handleShowAllBtn = () => {
+    setIsShowAll(true);
+  };
+
   return (
     <>
-      <div id="resultTitle">더 많은 지식과 더 많은 체험이 필요한</div>
-      <img
-        id="resultType"
-        src={title1}
-        alt="img"
-        width="180px"
-        height="44px"
-      ></img>
-      <img src={dino1} alt="img" width="310px" height="230px"></img>
-      <div id="resultMain_Title">
-        씨앗을 심고 새싹이 될 때까지 정성을 들이는 단계
-      </div>
+      <div id="resultTitle">{subTitle[showData.type - 1]}</div>
+      <img id="resultType" src={title[showData.type - 1]} alt="img"></img>
+      <img src={showData.img} alt="img" width="310px" height="230px"></img>
+      <div id="resultMain_Title">{showData.step}</div>
       <div id="resultMain">
-        <p>
-          더 나은 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고
-          저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고
-          저쩌고저쩌고 어쩌고 저쩌고 어쩌고 저쩌고저쩌고 어쩌고 저쩌고 어쩌고
-        </p>
-        <p>
-          내가 어떤 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고
-          어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고
-          저쩌고저쩌고 어쩌고 저쩌고 어쩌고 저쩌고저쩌고 어쩌고 저쩌고 어쩌고
-        </p>
+        <p>{showData.sub1}</p>
+        <p>{showData.sub2}</p>
       </div>
-
       <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
       <div className="resultPrograms">
-        <p id="programName">프로그램 이름</p>
-        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
+        <img
+          className="resultProgramImg"
+          src={showData.programs[0].img}
+          alt="img"
+        />
+        <div className="resultProgramDetail">
+          <p id="programName">{showData.programs[0].title}</p>
+          <p id="programDetail">{showData.programs[0].desc}</p>
+        </div>
       </div>
       <div className="resultPrograms">
-        <p id="programName">프로그램 이름</p>
-        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
-      </div>
+        <img
+          className="resultProgramImg"
+          src={showData.programs[1].img}
+          alt="img"
+        />
+        <div className="resultProgramDetail">
+          <p id="programName">{showData.programs[1].title}</p>
+          <p id="programDetail">{showData.programs[1].desc}</p>
+        </div>
+      </div>{" "}
       <div className="resultPrograms">
-        <p id="programName">프로그램 이름</p>
-        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
+        <img
+          className="resultProgramImg"
+          src={showData.programs[2].img}
+          alt="img"
+        />
+        <div className="resultProgramDetail">
+          <p id="programName">{showData.programs[2].title}</p>
+          <p id="programDetail">{showData.programs[2].desc}</p>
+        </div>
       </div>
-      <div id="moreProgram">
-        <p>나와 맞는 프로그램 더 보기</p>
-      </div>
-      <img
-        src="https://source.unsplash.com/random"
-        alt="img"
-        width="310px"
-        height="230px"
-      ></img>
-
       <div id="resultBtnContainer">
-        <button id="resultRetry">다시하기</button>
-        <button id="resultAll">전체 유형 보기</button>
+        <button id="resultRetry" onClick={handleRetryBtn}>
+          다시하기
+        </button>
+        <button id="resultAll" onClick={handleShowAllBtn}>
+          전체 유형 보기
+        </button>
       </div>
       <div id="resultShare">결과 공유하기</div>
       <div id="shareContainer">
@@ -143,9 +160,7 @@ const Result = (props) => {
           </>
         )}
       </div>
-
-      {/* <button id="resultRetryBtn">다시하기</button>
-      <button id="resultShowAll">전체 유형 보기</button> */}
+      {isShowAll && <Modal setIsShowAll={setIsShowAll} />}
     </>
   );
 };

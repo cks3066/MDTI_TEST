@@ -30,8 +30,7 @@ import q11 from "../images/question/qw11.png";
 import q12 from "../images/question/qw12.png";
 
 import Menu from "../elements/Menu";
-
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const Test = (props) => {
   const history = useHistory();
   const [step, setStep] = React.useState(0);
@@ -42,10 +41,7 @@ const Test = (props) => {
   const hei = [50, 25, 50, 75, 50, 75, 50, 75, 75, 50, 50, 75];
 
   React.useEffect(() => {
-    if (!time)
-      setTimeout(() => {
-        setTime(true);
-      }, 100);
+    setTime(true);
   }, [time]);
 
   const onClick = (num) => {
@@ -58,11 +54,7 @@ const Test = (props) => {
       });
     }
 
-    const { type } = testData.qnaList[step].a[num];
-    type.map((item) => {
-      select[item]++;
-      return item;
-    });
+    select[step] = num;
   };
 
   return (

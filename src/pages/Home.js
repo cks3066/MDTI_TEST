@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import axios from "axios";
 import title from "../images/title.png";
 import mainDino from "../images/main_dino.png";
 
@@ -9,20 +8,6 @@ const Home = (props) => {
   const onClick = () => {
     history.push("/test");
   };
-
-  axios
-    .get("http://api.catchup.shop/test", {
-      headers: {
-        withCredentials: true,
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((error) => {
-      console.dir(error);
-    });
 
   return (
     <>

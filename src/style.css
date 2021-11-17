@@ -8,6 +8,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -30,7 +46,7 @@ body {
   align-items: center;
   width: 375px;
   background-color: rgba(0, 0, 0, 0);
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .resultH3 {
@@ -68,7 +84,6 @@ body {
   margin-bottom: 100px;
 }
 .progress-div {
-  margin-top: 50px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 
@@ -107,6 +122,7 @@ body {
 #homeCountApply {
   margin: 0px;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 #testQuestionNum {
@@ -120,7 +136,7 @@ body {
 }
 
 .testQusetionNum {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 #testQuestion {
   font-family: "GmarketSansBold";
@@ -208,23 +224,39 @@ body {
 }
 
 .resultPrograms {
-  background: #eeeeee;
-  height: 80px;
+  height: 105px;
   width: 310px;
   margin: 10px;
-  padding: 0px;
+  display: flex;
+  cursor: pointer;
 }
 
+.resultProgramImg {
+  width: 105px;
+  height: 100%;
+  background-color: darkgray;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.resultProgramDetail {
+  width: 205px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0px 15px 15px 0px;
+  text-align: start;
+}
 #programName {
   font-family: "Noto Sans KR";
   font-weight: 700;
   font-size: 14px;
+  margin: 10px 18px 5px 18px;
 }
 
 #programDetail {
   font-family: "Noto Sans KR";
   font-weight: 400;
   font-size: 14px;
+  margin: 5px 18px 10px 18px;
 }
 
 #moreProgram {
@@ -278,7 +310,7 @@ body {
 
 #resultRetryBtn {
   margin-top: 30px;
-  background: #eeeeee;
+  background-color: #6aa99e;
   border: none;
   border-radius: 32.5px;
   width: 310px;
@@ -292,7 +324,7 @@ body {
 #resultShowAll {
   margin: 20px;
   margin-bottom: 133px;
-  background: #eeeeee;
+  background-color: #6aa99e;
   border: none;
   border-radius: 32.5px;
   width: 310px;
@@ -312,7 +344,7 @@ body {
 }
 
 #resultRetry {
-  background: #eeeeee;
+  background-color: #6aa99e;
   border: none;
   border-radius: 32.5px;
   width: 126px;
@@ -322,10 +354,11 @@ body {
   font-weight: 700;
   font-size: 14px;
   margin-right: 14px;
+  color: #fffef5;
 }
 
 #resultAll {
-  background: #eeeeee;
+  background-color: #6aa99e;
   border: none;
   border-radius: 32.5px;
   width: 170px;
@@ -334,6 +367,7 @@ body {
   font-family: "Noto Sans KR";
   font-weight: 700;
   font-size: 14px;
+  color: #fffef5;
 }
 
 #resultType {
@@ -359,44 +393,129 @@ body {
 }
 
 #test {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  animation: fadein 1s ease-in-out;
+  -moz-animation: fadein 1s ease-in-out; /* Firefox */
+  -webkit-animation: fadein 1s ease-in-out; /* Safari and Chrome */
+  -o-animation: fadein 1s ease-in-out; /* Opera */
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @-moz-keyframes fadein {
   /* Firefox */
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @-webkit-keyframes fadein {
   /* Safari and Chrome */
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: none;
   }
 }
 @-o-keyframes fadein {
   /* Opera */
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: none;
   }
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.modalPost {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 500px;
+  background-color: #fffef5;
+  overflow: auto;
+  overflow: x-hidden;
+  z-index: 3;
+}
+
+.modalHead {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  background-color: #6aa99e;
+}
+
+.modalHeadFont {
+  color: #fffef5;
+  font-family: "GmarketSansLight";
+  font-weight: bold;
+  font-size: 16px;
+  margin: 11px;
+}
+
+.closeBtn {
+  margin: 18px;
+  width: 14px;
+  height: 14px;
+  color: #fffef5;
+  font-weight: bold;
+}
+
+.modalCon {
+  border: 1px solid #6aa99e;
+  padding: 20px;
+}
+
+.modalTitle {
+  font-family: "GmarketSansBold";
+  text-align: start;
+  font-size: 22px;
+  color: #6aa99e;
+  margin: 15px 0px 10px 0px;
+}
+
+.modalSemi {
+  font-family: "Noto Sans KR";
+  text-align: start;
+  font-weight: 550;
+  font-size: 13px;
+  line-height: 19px;
+  color: #6aa99e;
+}
+
+.modalDetail {
+  font-family: "Noto Sans KR";
+  text-align: start;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  margin: 10px 0px;
 }
