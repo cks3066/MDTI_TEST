@@ -40,9 +40,17 @@ const Modal = (props) => {
               사람의 이야기를 듣는 것도 좋은 방법! 모든 것은 나로부터
               시작되니까요.
             </div>
-            <div>태그</div>
-            <div>태그</div>
-            <div>태그</div>
+            <div className="tagContainer">
+              <div className="tag" id="zerobase">
+                #제로베이스
+              </div>
+              <div className="tag" id="todak">
+                #토닥진로코디네이터
+              </div>
+              <div className="tag" id="gidae">
+                #아무튼,기대
+              </div>
+            </div>
           </div>
           <div className="modalCon">
             <img src={dino2} width="210px" height="180px" alt="img"></img>
@@ -59,9 +67,14 @@ const Modal = (props) => {
               위해서는 전문가의 도움이 필요할 수 있어요. 함께 구체적인 진로를
               고민해줄 누군가가 있다면 도움이 될 거예요.
             </div>
-            <div>태그</div>
-            <div>태그</div>
-            <div>태그</div>
+            <div className="tagContainer">
+              <div className="tag" style={{ width: "80px" }}>
+                #제로베이스
+              </div>
+              <div className="tag" style={{ width: "85px" }}>
+                #아무튼,기대
+              </div>
+            </div>
           </div>
           <div className="modalCon">
             <img src={dino3} width="210px" height="180px" alt="img"></img>
@@ -78,12 +91,23 @@ const Modal = (props) => {
               발휘해보는 건 어떨까요? 그 동안의 시도와 노력들이 이번 기회를 통해
               더욱 빛나게 될 거예요!
             </div>
-            <div>태그</div>
-            <div>태그</div>
-            <div>태그</div>
+            <div className="tagContainer">
+              <div className="tag" style={{ width: "70px" }}>
+                #시리즈D
+              </div>
+              <div className="tag" style={{ width: "70px" }}>
+                #미니인턴
+              </div>
+              <div
+                className="tag"
+                style={{ width: "75px", marginRight: "0px" }}
+              >
+                #자격증교육
+              </div>
+            </div>
           </div>
           <div className="modalCon">
-            <img src={dino1} width="210px" height="180px" alt="img"></img>
+            <img src={dino4} width="210px" height="180px" alt="img"></img>
             <div className="modalTitle">'꽃 디노'</div>
             <div className="modalSemi">
               완전히 꽃 피워 실전에 투입될 준비를 마친 단계
@@ -97,9 +121,17 @@ const Modal = (props) => {
               있어요. 전문가와 함께 포트폴리오, 자기소개서, 면접을 준비하고 최신
               취업 트렌드 및 기업정보를 알아볼까요?
             </div>
-            <div>태그</div>
-            <div>태그</div>
-            <div>태그</div>
+            <div className="tagContainer">
+              <div className="tag" style={{ width: "80px" }}>
+                #자소서특강
+              </div>
+              <div className="tag" style={{ width: "115px" }}>
+                #슬기로운취업스쿨
+              </div>
+              <div className="tag" style={{ width: "70px" }}>
+                #이루JOB
+              </div>
+            </div>
           </div>
         </div>
       </div>

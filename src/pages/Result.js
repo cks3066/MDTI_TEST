@@ -33,6 +33,13 @@ const copy = (func) => {
   func("complete");
 };
 
+const titlesize = [
+  [0, 0],
+  [180, 43],
+  [180, 43],
+  [251, 42],
+  [144, 44],
+];
 const Result = (props) => {
   const history = useHistory();
   const [isShowAll, setIsShowAll] = React.useState(false);
@@ -67,7 +74,13 @@ const Result = (props) => {
   return (
     <>
       <div id="resultTitle">{subTitle[showData.type - 1]}</div>
-      <img id="resultType" src={title[showData.type - 1]} alt="img"></img>
+      <img
+        id="resultType"
+        src={title[showData.type - 1]}
+        alt="img"
+        width={titlesize[showData.type][0]}
+        height={titlesize[showData.type][1]}
+      ></img>
       <img src={showData.img} alt="img" width="310px" height="230px"></img>
       <div id="resultMain_Title">{showData.step}</div>
       <div id="resultMain">
@@ -75,39 +88,45 @@ const Result = (props) => {
         <p>{showData.sub2}</p>
       </div>
       <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
-      <div className="resultPrograms">
-        <img
-          className="resultProgramImg"
-          src={showData.programs[0].img}
-          alt="img"
-        />
-        <div className="resultProgramDetail">
-          <p id="programName">{showData.programs[0].title}</p>
-          <p id="programDetail">{showData.programs[0].desc}</p>
+      <a href={showData.programs[0].url}>
+        <div className="resultPrograms">
+          <img
+            className="resultProgramImg"
+            src={showData.programs[0].img}
+            alt="img"
+          />
+          <div className="resultProgramDetail">
+            <p id="programName">{showData.programs[0].title}</p>
+            <p id="programDetail">{showData.programs[0].desc}</p>
+          </div>
         </div>
-      </div>
-      <div className="resultPrograms">
-        <img
-          className="resultProgramImg"
-          src={showData.programs[1].img}
-          alt="img"
-        />
-        <div className="resultProgramDetail">
-          <p id="programName">{showData.programs[1].title}</p>
-          <p id="programDetail">{showData.programs[1].desc}</p>
+      </a>
+      <a href={showData.programs[1].url}>
+        <div className="resultPrograms">
+          <img
+            className="resultProgramImg"
+            src={showData.programs[1].img}
+            alt="img"
+          />
+          <div className="resultProgramDetail">
+            <p id="programName">{showData.programs[1].title}</p>
+            <p id="programDetail">{showData.programs[1].desc}</p>
+          </div>
         </div>
-      </div>{" "}
-      <div className="resultPrograms">
-        <img
-          className="resultProgramImg"
-          src={showData.programs[2].img}
-          alt="img"
-        />
-        <div className="resultProgramDetail">
-          <p id="programName">{showData.programs[2].title}</p>
-          <p id="programDetail">{showData.programs[2].desc}</p>
+      </a>
+      <a href={showData.programs[2].url}>
+        <div className="resultPrograms">
+          <img
+            className="resultProgramImg"
+            src={showData.programs[2].img}
+            alt="img"
+          />
+          <div className="resultProgramDetail">
+            <p id="programName">{showData.programs[2].title}</p>
+            <p id="programDetail">{showData.programs[2].desc}</p>
+          </div>
         </div>
-      </div>
+      </a>
       <div id="resultBtnContainer">
         <button id="resultRetry" onClick={handleRetryBtn}>
           다시하기

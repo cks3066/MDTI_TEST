@@ -48,6 +48,20 @@ body {
   background-color: rgba(0, 0, 0, 0);
   margin-top: 90px;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
 
 .resultH3 {
   font-family: "GmarketSansBold";
@@ -138,20 +152,9 @@ body {
 .testQusetionNum {
   margin-top: 150px;
 }
-#testQuestion {
-  font-family: "GmarketSansBold";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
-  margin: 33px;
-  margin-bottom: 60px;
-
-  color: #6aa99e;
-}
 
 .testQuestionContainer {
-  height: 140px;
+  height: 135px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,9 +184,9 @@ body {
 }
 
 #resultTitle {
-  font-family: "Noto Sans KR";
+  font-family: "GmarketSansMedium";
   font-size: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   color: #6999b5;
   font-weight: 400;
 }
@@ -529,4 +532,35 @@ body {
   margin: 30px 0px;
   margin-bottom: 10px;
   color: gray;
+}
+
+.tag {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 12px;
+  color: #fffef5;
+  background: #6999b5;
+  border-radius: 100px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#zerobase {
+  width: 80px;
+}
+
+#todak {
+  width: 125px;
+}
+
+#gidae {
+  width: 85px;
 }
