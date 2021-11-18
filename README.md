@@ -42,5 +42,3 @@ www.catchup.shop
   - JavaScript(ES6)
   - Node.js
   - ReactJS
-  - Netlify
-  - Gabia Domain
