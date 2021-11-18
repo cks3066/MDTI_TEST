@@ -224,7 +224,6 @@ body {
 }
 
 .resultPrograms {
-  height: 105px;
   width: 310px;
   margin: 10px;
   display: flex;
@@ -233,17 +232,18 @@ body {
 
 .resultProgramImg {
   width: 105px;
-  height: 100%;
+  height: 130px;
   background-color: darkgray;
   border-radius: 15px 0px 0px 15px;
 }
 
 .resultProgramDetail {
   width: 205px;
-  height: 100%;
   background: #ffffff;
   border-radius: 0px 15px 15px 0px;
   text-align: start;
+  overflow: auto;
+  overflow: x-hidden;
 }
 #programName {
   font-family: "Noto Sans KR";
@@ -287,7 +287,7 @@ body {
   margin: 5px;
   cursor: pointer;
   padding: 1px;
-  border: 2px solid white;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .shareIcon:hover {
@@ -439,6 +439,7 @@ body {
   overflow: auto;
   overflow: x-hidden;
   z-index: 3;
+  border-radius: 15px;
 }
 
 .modalHead {
@@ -494,4 +495,38 @@ body {
   font-size: 12px;
   line-height: 19px;
   margin: 10px 0px;
+}
+
+.mdtiPar {
+  margin: 16px;
+}
+
+.mdtiDetail {
+  font-family: "Noto Sans KR";
+  text-align: start;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 10px 0px;
+}
+
+#modalMDTI {
+  height: 300px;
+}
+
+.mdtiTitle {
+  font-family: "GmarketSansBold";
+  font-size: 22px;
+  color: #6aa99e;
+  margin: 15px 0px 10px 0px;
+}
+
+.mdtiInfo {
+  font-family: "Noto Sans KR";
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 15px;
+  margin: 30px 0px;
+  margin-bottom: 10px;
+  color: gray;
 }

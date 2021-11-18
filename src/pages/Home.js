@@ -2,9 +2,11 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import title from "../images/title.png";
 import mainDino from "../images/main_dino.png";
+import MDTI from "../elements/MDTI";
 
 const Home = (props) => {
   const history = useHistory();
+  const [isMDTI, setIsMDTI] = React.useState(false);
   const onClick = () => {
     history.push("/test");
   };
@@ -32,7 +34,15 @@ const Home = (props) => {
       <button id="homeStartBtn" onClick={onClick}>
         시작하기
       </button>
-      <p id="homeCountApply">MDTI 테스트란?</p>
+      <p
+        id="homeCountApply"
+        onClick={() => {
+          setIsMDTI(true);
+        }}
+      >
+        <b>MDTI 테스트</b>란 무엇일까?
+      </p>
+      {isMDTI && <MDTI setIsMDTI={setIsMDTI} />}
     </>
   );
 };
