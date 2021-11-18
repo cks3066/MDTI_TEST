@@ -12,6 +12,14 @@ import title2 from "../images/result/title2.png";
 import title3 from "../images/result/title3.png";
 import title4 from "../images/result/title4.png";
 
+import subtitle1 from "../images/result/subtitle1.png";
+import subtitle2 from "../images/result/subtitle2.png";
+import subtitle3 from "../images/result/subtitle3.png";
+import subtitle4 from "../images/result/subtitle4.png";
+
+import programTitle from "../images/result/program_title.png";
+import shareTitle from "../images/result/share_title.png";
+
 const subTitle = [
   "다양한 경험이 필요한",
   "더 많은 지식과 더 많은 체험이 필요한",
@@ -19,6 +27,7 @@ const subTitle = [
   "면접, 자소서 등의 준비가 필요한",
 ];
 const title = [title1, title2, title3, title4];
+const subtitle = [subtitle1, subtitle2, subtitle3, subtitle4];
 const copyToClipboard = (val) => {
   const t = document.createElement("textarea");
   document.body.appendChild(t);
@@ -39,6 +48,13 @@ const titlesize = [
   [180, 43],
   [251, 42],
   [144, 44],
+];
+const subtitlesize = [
+  [0, 0],
+  [204, 43],
+  [200, 43],
+  [284, 47],
+  [204, 43],
 ];
 const Result = (props) => {
   const history = useHistory();
@@ -80,14 +96,28 @@ const Result = (props) => {
         alt="img"
         width={titlesize[showData.type][0]}
         height={titlesize[showData.type][1]}
-      ></img>
+      />
       <img src={showData.img} alt="img" width="310px" height="230px"></img>
-      <div id="resultMain_Title">{showData.step}</div>
+      <img
+        src={subtitle[showData.type - 1]}
+        alt="img"
+        width={subtitlesize[showData.type][0]}
+        height={subtitlesize[showData.type][1]}
+        style={{ marginTop: "25px", marginBottom: "10px" }}
+      />
       <div id="resultMain">
         <p>{showData.sub1}</p>
         <p>{showData.sub2}</p>
       </div>
-      <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
+      <div className="titleCon">
+        <img
+          src={programTitle}
+          alt="img"
+          width="276px"
+          height="37px"
+          style={{}}
+        ></img>
+      </div>
       <a href={showData.programs[0].url}>
         <div className="resultPrograms">
           <img
@@ -135,7 +165,13 @@ const Result = (props) => {
           전체 유형 보기
         </button>
       </div>
-      <div id="resultShare">결과 공유하기</div>
+      <img
+        id="resultShare"
+        src={shareTitle}
+        alt="img"
+        width="165px"
+        height="37px"
+      ></img>
       <div id="shareContainer">
         <img
           className="shareIcon"
