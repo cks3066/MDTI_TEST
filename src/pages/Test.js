@@ -42,6 +42,7 @@ const Test = (props) => {
 
   React.useEffect(() => {
     setTime(true);
+    console.log(select);
   }, [time]);
 
   const onClick = (num) => {
@@ -92,7 +93,7 @@ const Test = (props) => {
           <button
             className="testAnswer"
             onClick={() => {
-              onClick(0);
+              onClick(1);
             }}
           >
             네
@@ -100,7 +101,7 @@ const Test = (props) => {
           <button
             className="testAnswer"
             onClick={() => {
-              onClick(1);
+              onClick(0);
             }}
           >
             아니요

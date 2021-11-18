@@ -62,6 +62,8 @@ const Result = (props) => {
     setIsShowAll(true);
   };
 
+  console.log(showData.programs[2].img);
+
   return (
     <>
       <div id="resultTitle">{subTitle[showData.type - 1]}</div>
