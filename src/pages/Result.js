@@ -62,7 +62,6 @@ const Result = (props) => {
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클리보드에 URL이 복사되었습니다.";
   const { showData } = props.location.state;
-  console.log(showData);
   const handleToast = () => {
     if (!ToastStatus) {
       setToastStatus(true);
@@ -84,8 +83,6 @@ const Result = (props) => {
   const handleShowAllBtn = () => {
     setIsShowAll(true);
   };
-
-  console.log(showData.programs[2].img);
 
   return (
     <>

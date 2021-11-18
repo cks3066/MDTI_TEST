@@ -46,7 +46,7 @@ const Test = (props) => {
     "잘 모르겠어요.",
     "제가 하고 싶은 분야에 대해 잘 모르겠어요.",
     "희망 직업에서 어떤 일을 하는지 잘 모르겠어요.\u00A0 (아직 희망 직업 분야가 없어요.)",
-    "\u00A0\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0하고 싶은 일을 위해 직접적으로 \u00A0 \u00A0 \u00A0 \u00A0\u00A0 \u00A0 \u00A0 \u00A0시도해본 적이 있어요.",
+    "\u00A0\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 하고 싶은 일을 위해 직접적으로 \u00A0 \u00A0 \u00A0 \u00A0\u00A0 \u00A0 \u00A0 \u00A0시도해본 적이 있어요.",
     "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0아직 실무 경험은 없어요.  \u00A0 \u00A0 \u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 (아직 희망 직업 분야가 없어요.)",
     "잘 모르겠어요.",
     "취업 관련 트렌드에 대해서는 잘 모르겠어요.",
@@ -68,7 +68,6 @@ const Test = (props) => {
   ];
   React.useEffect(() => {
     setTime(true);
-    console.log(select);
   }, [time]);
 
   const onClick = (num) => {
@@ -80,7 +79,6 @@ const Test = (props) => {
         state: { select: select },
       });
     }
-
     select[step] = num;
   };
 

@@ -2,7 +2,6 @@ import React from "react";
 import { CloseOutlined } from "@ant-design/icons";
 
 const MDTI = (props) => {
-  console.log(props);
   const { setIsMDTI } = props;
   const handleCloseBtn = (e) => {
     setIsMDTI(false);
@@ -37,6 +36,7 @@ const MDTI = (props) => {
               src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cadc38b5-644c-4dc4-b037-26ec9857567f/4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211118%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211118T150637Z&X-Amz-Expires=86400&X-Amz-Signature=7d5e3c60c06355bda42acdbb79f405a201cf28c81a4c2829ed795e6f0d6c4edf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%224.png%22&x-id=GetObject"
               width="180px"
               height="150px"
+              alt="img"
             />
             <p className="mdtiInfo">
               * 해당 MDTI 테스트는 정밀한 테스트가 아닙니다.

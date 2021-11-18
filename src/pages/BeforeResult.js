@@ -6,7 +6,6 @@ const BeforeResult = (props) => {
   const history = useHistory();
   const { select } = props.location.state;
 
-  console.log(select);
   React.useEffect(() => {
     axios
       .get("http://api.catchup.shop/result", {
@@ -15,7 +14,6 @@ const BeforeResult = (props) => {
         },
       })
       .then((res) => {
-        console.log(res);
         setTimeout(() => {
           history.push({
             pathname: "/result",
