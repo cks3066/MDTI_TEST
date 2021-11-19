@@ -65,7 +65,7 @@ const Result = (props) => {
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클립보드에 URL이 복사되었습니다.";
   const showData = JSON.parse(sessionStorage.getItem("data"));
-
+  console.log(showData);
   const handleToast = () => {
     if (!ToastStatus) {
       setToastStatus(true);
