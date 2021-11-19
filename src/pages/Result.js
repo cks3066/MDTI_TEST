@@ -20,6 +20,9 @@ import subtitle4 from "../images/result/subtitle4.png";
 import programTitle from "../images/result/program_title.png";
 import shareTitle from "../images/result/share_title.png";
 import Header from "../elements/Header";
+
+import more from "../images/result/more.png";
+import programs from "../images/result/programs.png";
 const subTitle = [
   "다양한 경험이 필요한",
   "더 많은 지식과 더 많은 체험이 필요한",
@@ -111,12 +114,21 @@ const Result = (props) => {
 
       <div className="titleCon">
         <img
-          src={programTitle}
+          src={programs}
           alt="img"
-          width="276px"
+          width="250px"
           height="37px"
           style={{}}
         ></img>
+        <a href="http://www.youtheroom.kr/product/list.php?ca_id=10">
+          <img
+            src={more}
+            alt="img"
+            width="22px"
+            height="22px"
+            style={{ marginLeft: "2px", marginTop: "1px" }}
+          ></img>
+        </a>
         {/* <a id="moreA" href="http://www.youtheroom.kr/product/list.php?ca_id=10">
           <div id="more"> More</div>
         </a> */}
