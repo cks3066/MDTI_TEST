@@ -6,13 +6,13 @@ const kakaoShare = () => {
     content: {
       title: "Catch Up! MDTI 테스트",
       description: "MDTI 테스트 받고 경품까지!",
-      imageUrl: "https://ibb.co/zPnLJws",
+      imageUrl: "https://i.ibb.co/CV1X2FB/for-Share-Ka-Kao.png",
       link: {
         mobileWebUrl: "https://bit.ly/캐취업",
       },
     },
     itemContent: {
-      titleImageUrl: "https://ibb.co/BTbbyhj",
+      titleImageUrl: "https://i.ibb.co/GCyyWZk/logo-KAKAO.png",
       titleImageText: "캐취업",
       titleImageCategory: "청년이룸",
     },
