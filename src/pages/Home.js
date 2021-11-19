@@ -13,7 +13,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Header back={false} />
+      <Header isBack={false} />
       <div className="home">
         <b>My Dream</b> Type Indicator
       </div>

@@ -87,7 +87,7 @@ const Result = (props) => {
 
   return (
     <>
-      <Header back={false} />
+      <Header isBack={false} />
       <div id="resultTitle">{subTitle[showData.type - 1]}</div>
       <img
         id="resultType"
