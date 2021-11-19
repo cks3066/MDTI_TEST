@@ -96,7 +96,7 @@ const Result = (props) => {
         width={titlesize[showData.type][0]}
         height={titlesize[showData.type][1]}
       />
-      <img src={showData.img} alt="img" width="310px" height="230px"></img>
+      <img src={showData.img} alt="img" width="290px" height="250px"></img>
       <img
         src={subtitle[showData.type - 1]}
         alt="img"
@@ -117,9 +117,9 @@ const Result = (props) => {
           height="37px"
           style={{}}
         ></img>
-        <a id="moreA" href="http://www.youtheroom.kr/product/list.php?ca_id=10">
+        {/* <a id="moreA" href="http://www.youtheroom.kr/product/list.php?ca_id=10">
           <div id="more"> More</div>
-        </a>
+        </a> */}
       </div>
 
       <a href={showData.programs[0].url}>

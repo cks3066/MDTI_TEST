@@ -17,7 +17,15 @@ const Header = (props) => {
   return (
     <>
       <div className="headerContainer">
-        {isBack && <img className="back" src={back} onClick={handleOnClick} />}
+        {isBack && (
+          <img
+            className="back"
+            src={back}
+            onClick={handleOnClick}
+            width="24px"
+            height="24px"
+          />
+        )}
         <Link to="/">
           <img
             className="logo"
