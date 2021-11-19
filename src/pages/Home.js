@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import title from "../images/title.png";
 import mainDino from "../images/main_dino.png";
 import MDTI from "../elements/MDTI";
-
+import Header from "../elements/Header";
 const Home = (props) => {
   const history = useHistory();
   const [isMDTI, setIsMDTI] = React.useState(false);
@@ -13,6 +13,7 @@ const Home = (props) => {
 
   return (
     <>
+      <Header back={false} />
       <div className="home">
         <b>My Dream</b> Type Indicator
       </div>

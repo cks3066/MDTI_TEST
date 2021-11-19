@@ -19,7 +19,7 @@ import subtitle4 from "../images/result/subtitle4.png";
 
 import programTitle from "../images/result/program_title.png";
 import shareTitle from "../images/result/share_title.png";
-
+import Header from "../elements/Header";
 const subTitle = [
   "다양한 경험이 필요한",
   "더 많은 지식과 더 많은 체험이 필요한",
@@ -60,8 +60,9 @@ const Result = (props) => {
   const history = useHistory();
   const [isShowAll, setIsShowAll] = React.useState(false);
   const [ToastStatus, setToastStatus] = React.useState(false);
-  const ToastMsg = "클리보드에 URL이 복사되었습니다.";
-  const { showData } = props.location.state;
+  const ToastMsg = "클립보드에 URL이 복사되었습니다.";
+  const showData = JSON.parse(sessionStorage.getItem("data"));
+
   const handleToast = () => {
     if (!ToastStatus) {
       setToastStatus(true);
@@ -86,6 +87,7 @@ const Result = (props) => {
 
   return (
     <>
+      <Header back={false} />
       <div id="resultTitle">{subTitle[showData.type - 1]}</div>
       <img
         id="resultType"

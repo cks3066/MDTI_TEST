@@ -29,6 +29,8 @@ import q10 from "../images/question/qw10.png";
 import q11 from "../images/question/qw11.png";
 import q12 from "../images/question/qw12.png";
 
+import Header from "../elements/Header";
+
 var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const Test = (props) => {
   const history = useHistory();
@@ -85,6 +87,7 @@ const Test = (props) => {
   return (
     <>
       {/* <Menu /> */}
+      <Header isBack={true} step={step} setStep={setStep} />
       <ProgressBar width={300} percent={step / 11} />
       {time && (
         <div id="test">

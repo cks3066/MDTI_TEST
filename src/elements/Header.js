@@ -1,11 +1,23 @@
 import React from "react";
 import logo from "../images/logo.jpg";
 import { Route, Link } from "react-router-dom";
+import back from "../images/back.png";
+
 const Header = (props) => {
-  const handleOnClick = () => {};
+  const { isBack } = props;
+  const { setStep } = props;
+  const { step } = props;
+  const handleOnClick = () => {
+    if (isBack) {
+      if (step !== 0) {
+        setStep(step - 1);
+      }
+    }
+  };
   return (
     <>
       <div className="headerContainer">
+        {isBack && <img className="back" src={back} onClick={handleOnClick} />}
         <Link to="/">
           <img
             className="logo"

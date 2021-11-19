@@ -614,3 +614,10 @@ a:visited {
   height: 20px;
   margin-top: 5px;
 }
+
+.back {
+  margin-bottom: 15px;
+  margin-left: -110px;
+  margin-right: 85px;
+  cursor: pointer;
+}

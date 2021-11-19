@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <Route path="/" exact component={Home} />
         <Route path="/test" exact component={Test} />
         <Route path="/wait" exact component={BeforeResult} />
