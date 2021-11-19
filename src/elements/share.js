@@ -2,64 +2,25 @@ const kakaoShare = () => {
   window.Kakao.Link.sendDefault({
     objectType: "feed",
     content: {
-      title: "오늘의 디저트",
-      description: "아메리카노, 빵, 케익",
+      title: "Catch Up! MDTI 테스트",
+      description: "MDTI 테스트 받고 경품까지!",
       imageUrl:
-        "http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg",
+        "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c9311dd0-05cb-4a47-978d-ef2f032dc52b/Group_109_%282%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211119T030234Z&X-Amz-Expires=86400&X-Amz-Signature=98ae7bf4709e9ff560e6fc82765f662f94aec705bba130f797d7b0a092be10b3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Group%2520109%2520%282%29.png%22&x-id=GetObject",
       link: {
-        mobileWebUrl: "https://developers.kakao.com",
-        androidExecutionParams: "test",
+        mobileWebUrl: "https://bit.ly/캐취업",
       },
     },
     itemContent: {
-      profileText: "Kakao",
-      profileImageUrl:
-        "http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png",
       titleImageUrl:
-        "http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png",
-      titleImageText: "Cheese cake",
-      titleImageCategory: "Cake",
-      items: [
-        {
-          item: "Cake1",
-          itemOp: "1000원",
-        },
-        {
-          item: "Cake2",
-          itemOp: "2000원",
-        },
-        {
-          item: "Cake3",
-          itemOp: "3000원",
-        },
-        {
-          item: "Cake4",
-          itemOp: "4000원",
-        },
-        {
-          item: "Cake5",
-          itemOp: "5000원",
-        },
-      ],
-      sum: "총 결제금액",
-      sumOp: "15000원",
-    },
-    social: {
-      likeCount: 10,
-      commentCount: 20,
-      sharedCount: 30,
+        "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f3b2fc31-245a-4a76-83ec-bd44a528958f/Group_111_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211119T030745Z&X-Amz-Expires=86400&X-Amz-Signature=26e21e9116fce3a0f20d4b06c6db0747674d21f88a5ecf27c340a4918bfa09fc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Group%2520111%2520%281%29.png%22&x-id=GetObject",
+      titleImageText: "캐취업",
+      titleImageCategory: "청년이룸",
     },
     buttons: [
       {
-        title: "웹으로 이동",
+        title: "테스트 하러 가기",
         link: {
-          mobileWebUrl: "https://developers.kakao.com",
-        },
-      },
-      {
-        title: "앱으로 이동",
-        link: {
-          mobileWebUrl: "https://developers.kakao.com",
+          mobileWebUrl: "https://bit.ly/캐취업",
         },
       },
     ],

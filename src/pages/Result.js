@@ -106,6 +106,7 @@ const Result = (props) => {
         <p>{showData.sub1}</p>
         <p>{showData.sub2}</p>
       </div>
+
       <div className="titleCon">
         <img
           src={programTitle}
@@ -114,7 +115,11 @@ const Result = (props) => {
           height="37px"
           style={{}}
         ></img>
+        <a id="moreA" href="http://www.youtheroom.kr/product/list.php?ca_id=10">
+          <div id="more"> More</div>
+        </a>
       </div>
+
       <a href={showData.programs[0].url}>
         <div className="resultPrograms">
           <img
@@ -214,6 +219,58 @@ const Result = (props) => {
           </>
         )}
       </div>
+      <img
+        id="resultShare"
+        src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/821f0566-489d-4f29-b5f5-38014f406b1c/%EC%9D%B4%EB%B2%A4%ED%8A%B8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211119T033718Z&X-Amz-Expires=86400&X-Amz-Signature=7cce60b3c648a2aee07373f52c1ebdbff7b422b8c57dc42a328e6c31122d4629&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259D%25B4%25EB%25B2%25A4%25ED%258A%25B8.png%22&x-id=GetObject"
+        alt="img"
+        width="187px"
+        height="37px"
+        style={{ marginBottom: "25px" }}
+      ></img>
+      <div className="eventContainer">
+        <div id="resultTitle">
+          MDTI 테스트 결과 페이지를 캡처하여 <br />
+          아래 버튼의 구글폼에 첨부하여 보내주시면 <br />
+          추첨을 통해 경품을 드립니다!
+        </div>
+        <h1 id="eventDate">이벤트 기간</h1>
+        <h3 id="eventDate" style={{ fontSize: "16px", marginTop: "5px" }}>
+          11월 20일 ~ 11월 27일
+        </h3>
+        <a href="https://forms.gle/15RKzVnUJkJxL64Z8">
+          <button id="resultAll" style={{ width: "160px", margin: "20px" }}>
+            이벤트 참여하기
+          </button>
+        </a>
+        <p id="info">
+          * 본 이벤트는 상품의 수량에 따라 조기 마감될 수 있습니다.
+        </p>
+      </div>
+
+      {/* <div className="infoContainer">
+        <img
+          id="resultShare"
+          src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bbd07df1-c507-4d91-8f83-b598f9f68b38/%EC%9D%B4%EB%A3%A8%EB%AF%B8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211119T033720Z&X-Amz-Expires=86400&X-Amz-Signature=71d0337d2edc07353c29367c998526fd88802a6d7faa9e7da285a3bc4d5f3d85&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259D%25B4%25EB%25A3%25A8%25EB%25AF%25B8.png%22&x-id=GetObject"
+          alt="img"
+          width="197px"
+          height="40px"
+          style={{ marginBottom: "25px" }}
+        ></img>
+        <div id="resultTitle">
+          이루미 가입하고 <br />
+          나만 알고 싶은 취업 프로그램 무료로 참여하자!
+        </div>
+        <p>
+          구로청년이룸은 청년이라면 누구나 대환영! <br />
+        </p>
+        <p>
+          청년이룸의 다양한 프로그램 알림 신청하고
+          <br /> 나만의 스펙 쌓기!{" "}
+        </p>
+        <button id="resultAll" style={{ width: "160px", margin: "20px" }}>
+          이루미 알림 신청
+        </button>
+      </div> */}
       {isShowAll && <Modal setIsShowAll={setIsShowAll} />}
     </>
   );
