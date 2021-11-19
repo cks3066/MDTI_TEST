@@ -38,7 +38,7 @@ const copyToClipboard = (val) => {
 };
 
 const copy = (func) => {
-  copyToClipboard("catchup.shop/");
+  copyToClipboard("https://bit.ly/캐취업");
   func("complete");
 };
 
