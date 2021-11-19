@@ -68,6 +68,12 @@ a:visited {
   text-decoration: none;
 }
 
+button:link {
+  color: black;
+}
+button:visited {
+  color: black;
+}
 .resultH1 {
   font-family: "GmarketSansBold";
   font-style: normal;
@@ -195,6 +201,10 @@ a:visited {
   border-radius: 32.5px;
   border: 2px solid #6aa99e;
   padding: 0;
+}
+
+.testAnswer:visited {
+  color: black;
 }
 
 #resultTitle {
