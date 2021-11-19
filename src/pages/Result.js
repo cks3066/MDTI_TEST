@@ -21,6 +21,11 @@ import programTitle from "../images/result/program_title.png";
 import shareTitle from "../images/result/share_title.png";
 import Header from "../elements/Header";
 
+import dino1 from "../images/result/dino/dino1.png";
+import dino2 from "../images/result/dino/dino2.png";
+import dino3 from "../images/result/dino/dino3.png";
+import dino4 from "../images/result/dino/dino4.png";
+
 import more from "../images/result/more.png";
 import programs from "../images/result/programs.png";
 const subTitle = [
@@ -31,6 +36,7 @@ const subTitle = [
 ];
 const title = [title1, title2, title3, title4];
 const subtitle = [subtitle1, subtitle2, subtitle3, subtitle4];
+const dino = [dino1, dino2, dino3, dino4];
 const copyToClipboard = (val) => {
   const t = document.createElement("textarea");
   document.body.appendChild(t);
@@ -99,7 +105,12 @@ const Result = (props) => {
         width={titlesize[showData.type][0]}
         height={titlesize[showData.type][1]}
       />
-      <img src={showData.img} alt="img" width="290px" height="250px"></img>
+      <img
+        src={dino[showData.type - 1]}
+        alt="img"
+        width="290px"
+        height="250px"
+      ></img>
       <img
         src={subtitle[showData.type - 1]}
         alt="img"
