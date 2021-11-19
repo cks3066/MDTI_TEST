@@ -28,6 +28,8 @@ import dino4 from "../images/result/dino/dino4.png";
 
 import more from "../images/result/more.png";
 import programs from "../images/result/programs.png";
+import event from "../images/event.png";
+
 const subTitle = [
   "다양한 경험이 필요한",
   "더 많은 지식과 더 많은 체험이 필요한",
@@ -246,7 +248,7 @@ const Result = (props) => {
       </div>
       <img
         id="resultShare"
-        src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/821f0566-489d-4f29-b5f5-38014f406b1c/%EC%9D%B4%EB%B2%A4%ED%8A%B8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211119T033718Z&X-Amz-Expires=86400&X-Amz-Signature=7cce60b3c648a2aee07373f52c1ebdbff7b422b8c57dc42a328e6c31122d4629&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259D%25B4%25EB%25B2%25A4%25ED%258A%25B8.png%22&x-id=GetObject"
+        src={event}
         alt="img"
         width="187px"
         height="37px"

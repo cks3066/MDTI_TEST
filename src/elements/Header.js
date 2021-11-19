@@ -24,6 +24,7 @@ const Header = (props) => {
             onClick={handleOnClick}
             width="24px"
             height="24px"
+            alt="img"
           />
         )}
         <Link to="/">
