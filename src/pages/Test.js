@@ -71,7 +71,6 @@ const Test = (props) => {
   React.useEffect(() => {
     setTime(true);
   }, [time]);
-
   const onClick = (num) => {
     setTime(false);
     if (step < 11) setStep(step + 1);

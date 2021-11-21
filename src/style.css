@@ -54,25 +54,25 @@ body {
   margin-top: 90px;
 }
 a {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 a:link {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 button:link {
-  color: black;
+  color: #000000;
 }
 button:visited {
-  color: black;
+  color: #000000;
 }
 .resultH1 {
   font-family: "GmarketSansBold";
@@ -204,7 +204,7 @@ button:visited {
 }
 
 .testAnswer:visited {
-  color: black;
+  color: #000000;
 }
 
 #resultTitle {
