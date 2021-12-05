@@ -20,19 +20,19 @@ www.catchup.shop
 
 <h2>주요 기능</h2>
 
-<p>메인화면</p>
+<p>- 메인</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="200px" height="300px">
 
-<p>퀴즈화면</p>
+<p>- 테스트</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761017-535f3cbc-fcba-4a31-84d6-4fa0c0ee7385.png" width="200px" height="300px">
 
-<p>결과화면1</p>
+<p>- 테스트 결과 안내</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761021-626ec5be-c3da-4568-8dbf-e33f273a3e60.png" width="200px" height="300px">
 
-<p>결과화면2</p>
+<p>- 프로그램 안내 2</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761025-3ff600ee-40b9-4c5f-871d-ed0d97c8e1ab.png" width="200px" height="300px">
 
-<p>결과화면3</p>
+<p>- 공유 기능 및 이벤트 페이지 연결</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761030-a252d982-4e2d-4f72-ba88-65f622e96e2d.png" width="200px" height="300px">
 
 </div>
