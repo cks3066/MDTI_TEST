@@ -62,6 +62,6 @@ www.catchup.shop
   - Node.js
   - ReactJS
 
-> 프로젝트 노션
+## 프로젝트 노션
 
 https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
