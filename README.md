@@ -28,8 +28,7 @@ www.catchup.shop
 
 https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
 
-</div>
-
+<div align="center">
 
 <h2>주요 기능</h2>
 
