@@ -24,6 +24,10 @@ www.catchup.shop
 캐릭터들의 특색과 이미지를 확용하여 유익하고 친근한 서비스가 되도록 함<br/>
 </p>
 
+> 프로젝트 노션
+
+https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
+
 </div>
 
 
