@@ -35,7 +35,7 @@ www.catchup.shop
 </div>
 
 
-## 기술스택
+## 개발환경 및 기술스택
 
 <p>
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">&nbsp
@@ -45,14 +45,6 @@ www.catchup.shop
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">&nbsp
 
 </p>
-
-## 개발환경
-
-  - HTML5
-  - CSS
-  - JavaScript(ES6)
-  - Node.js
-  - ReactJS
 
 ## 프로젝트 노션
 
