@@ -38,7 +38,7 @@ www.catchup.shop
 <p>- 테스트 결과 안내</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761021-626ec5be-c3da-4568-8dbf-e33f273a3e60.png" width="200px" height="300px">
 
-<p>- 프로그램 안내 2</p>
+<p>- 프로그램 안내</p>
 <img src="https://user-images.githubusercontent.com/62434898/144761025-3ff600ee-40b9-4c5f-871d-ed0d97c8e1ab.png" width="200px" height="300px">
 
 <p>- 공유 기능 및 이벤트 페이지 연결</p>
