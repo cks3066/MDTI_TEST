@@ -17,7 +17,7 @@ www.catchup.shop
 <div align="center">
 <h2>주요 기능</h2>
 
-<img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="200px" height="300px">
+<img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="250px" height="400px">
 <p>- 메인</p>
 <br/>
 <img src="https://user-images.githubusercontent.com/62434898/144761017-535f3cbc-fcba-4a31-84d6-4fa0c0ee7385.png" width="200px" height="300px">
