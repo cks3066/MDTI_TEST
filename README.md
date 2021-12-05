@@ -21,9 +21,8 @@ www.catchup.shop
 자신의 진로단계를 확인하고 자신에게 맞는 프로그램을 확인할 수 있는 서비스<br/>
 </p>
 
-
-<h2>주요 기능</h2>
 <div align="center">
+<h2>주요 기능</h2>
 
 <img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="200px" height="300px">
 <p>- 메인</p>
