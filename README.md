@@ -21,11 +21,6 @@ www.catchup.shop
 자신의 진로단계를 확인하고 자신에게 맞는 프로그램을 확인할 수 있는 서비스<br/>
 </p>
 
-> 프로젝트 노션
-
-https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
-
-
 
 <h2>주요 기능</h2>
 <div align="center">
@@ -66,3 +61,7 @@ https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b
   - JavaScript(ES6)
   - Node.js
   - ReactJS
+
+> 프로젝트 노션
+
+https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
