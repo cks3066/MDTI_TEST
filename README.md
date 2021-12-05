@@ -32,10 +32,10 @@ https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b
 
 <h2>주요 기능</h2>
 <div align="center">
-<p>- 메인</p>
+- 메인
 <img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="200px" height="300px">
 
-<p>- 테스트</p>
+- 테스트
 <img src="https://user-images.githubusercontent.com/62434898/144761017-535f3cbc-fcba-4a31-84d6-4fa0c0ee7385.png" width="200px" height="300px">
 
 <p>- 테스트 결과 안내</p>
