@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import testData from "../testData.json";
 import ProgressBar from "../elements/Progress";
 
 import Q1 from "../images/questionNum/Q1.png";
