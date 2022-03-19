@@ -21,23 +21,28 @@ www.catchup.shop
 자신의 진로단계를 확인하고 자신에게 맞는 프로그램을 확인할 수 있는 서비스<br/>
 </p>
 
+
+
 <div align="center">
 <h2>주요 기능</h2>
 
-<img src="https://user-images.githubusercontent.com/62434898/144761009-876cfd9c-248a-4045-9dbe-5dc94bd06c75.png" width="250px" height="400px">
+<img src="https://user-images.githubusercontent.com/62434898/159136913-3f04c6de-83bc-4e94-9ab1-0dc43ddbf5b4.gif" width="250px" height="400px">
 <p>- 메인</p>
 <br/>
-<img src="https://user-images.githubusercontent.com/62434898/144761017-535f3cbc-fcba-4a31-84d6-4fa0c0ee7385.png" width="250px" height="400px">
-<p>- 테스트</p>
+<img src="https://user-images.githubusercontent.com/62434898/159137051-60940da5-0dae-4a6b-adc6-2f4566bf7275.gif" width="250px" height="400px">
+<p>- 테스트 </p>
 <br/>  
-<img src="https://user-images.githubusercontent.com/62434898/144761021-626ec5be-c3da-4568-8dbf-e33f273a3e60.png" width="250px" height="400px">
-<p>- 테스트 결과 안내</p>
-<br/>  
-<img src="https://user-images.githubusercontent.com/62434898/144761025-3ff600ee-40b9-4c5f-871d-ed0d97c8e1ab.png" width="250px" height="400px">
-<p>- 프로그램 안내</p>
-<br/>  
-<img src="https://user-images.githubusercontent.com/62434898/144761030-a252d982-4e2d-4f72-ba88-65f622e96e2d.png" width="250px" height="400px">
+<img src="https://user-images.githubusercontent.com/62434898/159137220-75ba26ab-e406-4e9c-b845-5a3ee1934a35.gif" width="250px" height="400px">
+<p>- 테스트 결과 및 프로그램 안내</p>
+<br/>
+<img src="https://user-images.githubusercontent.com/62434898/159137360-5c575aec-2241-4c74-bc84-8957e5c307f8.gif" width="250px" height="400px">
 <p>- 공유 기능 및 이벤트 페이지 연결</p>
+<br/>
+<img src="https://user-images.githubusercontent.com/62434898/159137370-f7c88a7b-bd4d-43e7-9af4-723626700cef.png" width="250px" height="400px">
+<img src="https://user-images.githubusercontent.com/62434898/159137375-70b6c8dc-ce5e-4324-9c8c-d3af599a7109.PNG" width="250px" height="400px">
+<img src="https://user-images.githubusercontent.com/62434898/159137439-d0fd6869-1049-40f7-94ea-3aa1052fa2ea.PNG" width="250px" height="400px">
+<br/>  
+
   
 </div>
 
@@ -50,7 +55,7 @@ www.catchup.shop
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">&nbsp
   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">&nbsp
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">&nbsp
-
+  <img src="https://img.shields.io/badge/django-ffffff?style=for-the-badge&logo=Django&logoColor=0a2c1e">&nbsp
 </p>
 
 ## 프로젝트 노션
