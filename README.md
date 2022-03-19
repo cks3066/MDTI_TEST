@@ -1,19 +1,8 @@
 <h1 align="center">캐취업! 꿈을 찾는 MDTI 테스트</h1>
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-</p>
-
-> 배포 URL
-
-www.catchup.shop
-
 <h2>구로 청년이룸 프로젝트</h2>
 
-> <b>스텝별 교육 프로그램 안내 및 프로그램 참여율을 높이는 서비스 제작</b>
+<b>스텝별 교육 프로그램 안내 및 프로그램 참여율을 높이는 서비스 제작</b>
 
 
 <p>
@@ -21,7 +10,38 @@ www.catchup.shop
 자신의 진로단계를 확인하고 자신에게 맞는 프로그램을 확인할 수 있는 서비스<br/>
 </p>
 
+---
 
+### 배포 URL
+
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
+www.catchup.shop
+
+---
+
+### 프로젝트 노션
+
+https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
+
+---
+## 개발환경 및 기술스택
+
+<p>
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/python-346e9e?style=for-the-badge&logo=Python&logoColor=f2cc45">&nbsp
+  <img src="https://img.shields.io/badge/flask-ffffff?style=for-the-badge&logo=Flask&logoColor=black">&nbsp
+</p>
+
+---
 
 <div align="center">
 <h2>주요 기능</h2>
@@ -48,18 +68,3 @@ www.catchup.shop
   
 </div>
 
-
-## 개발환경 및 기술스택
-
-<p>
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">&nbsp
-  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">&nbsp
-  <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/django-ffffff?style=for-the-badge&logo=Django&logoColor=0a2c1e">&nbsp
-</p>
-
-## 프로젝트 노션
-
-https://beautiful-pluto-60e.notion.site/Catch-Up-MDTI-6cb9531aa50245f8b896269c4b03e105
