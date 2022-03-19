@@ -38,9 +38,11 @@ www.catchup.shop
 <img src="https://user-images.githubusercontent.com/62434898/159137360-5c575aec-2241-4c74-bc84-8957e5c307f8.gif" width="250px" height="400px">
 <p>- 공유 기능 및 이벤트 페이지 연결</p>
 <br/>
-<img src="https://user-images.githubusercontent.com/62434898/159137370-f7c88a7b-bd4d-43e7-9af4-723626700cef.png" width="250px" height="400px">
-<img src="https://user-images.githubusercontent.com/62434898/159137375-70b6c8dc-ce5e-4324-9c8c-d3af599a7109.PNG" width="250px" height="400px">
-<img src="https://user-images.githubusercontent.com/62434898/159137439-d0fd6869-1049-40f7-94ea-3aa1052fa2ea.PNG" width="250px" height="400px">
+<img src="https://user-images.githubusercontent.com/62434898/159137370-f7c88a7b-bd4d-43e7-9af4-723626700cef.png" width="150px" height="250px">
+&nbsp
+<img src="https://user-images.githubusercontent.com/62434898/159137375-70b6c8dc-ce5e-4324-9c8c-d3af599a7109.PNG" width="150px" height="250px">
+&nbsp
+<img src="https://user-images.githubusercontent.com/62434898/159137439-d0fd6869-1049-40f7-94ea-3aa1052fa2ea.PNG" width="150px" height="250px">
 <br/>  
 
   
